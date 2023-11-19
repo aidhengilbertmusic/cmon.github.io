@@ -1,0 +1,119 @@
+body {
+  background-color: aliceblue;
+}
+
+.navbar {
+  background: repeating-linear-gradient(-45deg,
+      aliceblue,
+      aliceblue 10px,
+      rgba(127, 156, 181, 0.721) 10px,
+      rgba(88, 151, 206, 0.685) 20px);
+    
+}
+
+
+.dice {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: rgb(165, 50, 40) 0 0 5px;
+
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(225, 63, 63, 0.65);
+
+  border: 2px solid black;
+  border-radius: 2px 0px 3px 3px;
+  z-index: 999;
+  /* box-shadow: 70px 0px teal; */
+}
+
+/* .dice:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+
+    box-shadow: 100px 10px teal;
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+} */
+
+.dice::before {
+  content: '';
+  display: inline-block;
+  background: #f15757;
+  width: 101px;
+  height: 20px;
+  transform: skewX(-46deg);
+  position: absolute;
+  top: -21px;
+  left: 8px;
+  border-radius: 3px 3px 0px 1px;
+  /* border-width: 2px 2px 0 2px; */
+  /* border: (2px solid black) (22px solid black); */
+  border-top: 2px solid black;
+  border-left: 3px solid black;
+  border-right: 2px solid black;
+  border-bottom: 1px solid black;
+
+
+
+}
+
+.dice::after {
+  content: '';
+  display: inline-block;
+  background: #a32121;
+  width: 21px;
+  height: 99px;
+  transform: skewY(-44deg);
+  position: absolute;
+  top: -12px;
+  left: 97px;
+  border-radius: 0px 3px 5px 2px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 1px solid black;
+
+
+}
+
+.col {
+  height: 150px;
+}
+
+.text-background {
+  background-color: rgba(0, 255, 255, 0.638);
+  width: fit-content;
+  /* margin: 1rem; */
+  padding: 1rem;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px rgb(50, 48, 48);
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.form-wrapper {
+  max-width: 50%;
+}
+
+.again {
+  background-color: rgba(0, 255, 255, 0.638);
+  color: black;
+  border-color: black;
+  box-shadow: 5px 5px 10px rgb(50, 48, 48);
+}
